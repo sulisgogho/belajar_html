@@ -26,7 +26,29 @@
       </div>
       <div>
         <button type="submit">Kirim</button>
-      </div
+      </div>
+    </form>
+
+    <hr />
+    <h1>Pesanan</h1>
+    <form action="/order">
+      <div>
+        <label for="">Baju</label>
+        <input type="radio" name="baju" id="" value="kemeja" /> <label for="">Kemeja</label> <input type="radio" name="baju" id="" value="kaos" /> <label for="">Kaos</label>
+      </div>
+      <div>
+        <label for="ukuran">Ukuran</label>
+        <select name="ukuran" id="ukuran">
+          <option value="s">small</option>
+          <option value="m">medium</option>
+          <option value="l">large</option>
+        </select>
+      </div>
+      <div>
+        <label for="term">Sesuai Pesanan</label>
+        <input type="checkbox" name="term" id="term" checked />
+      </div>
+      <button type="submit">Order</button>
     </form>
   </body>
 </html>
